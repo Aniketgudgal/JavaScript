@@ -4,6 +4,7 @@ var ch = 'A';
 while(ch <= 'Z')
 {
 	console.log(ch);
+	console.log(ch.charCodeAt(0));
 	ch = String.fromCharCode(ch.charCodeAt(0)+1);
 	// charCodeAt() this method used to access the ascii values of the each Character
 	// fromCharCode() this method used to convert ascii decimal code into the Character

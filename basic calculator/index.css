@@ -1,0 +1,16 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 80%;
+    min-height: 650px;
+    border: 1px solid #000;
+    margin: auto;
+}
+.data{
+    background-color: #000;
+}

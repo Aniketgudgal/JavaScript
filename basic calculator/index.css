@@ -7,10 +7,39 @@
 .container
 {
     width: 80%;
-    min-height: 650px;
+    min-height: 550px;
     border: 1px solid #000;
     margin: auto;
 }
 .data{
-    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.showInfo{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 40px;
+    padding: 8px;
+    margin-top: 25px;
+    display: flex;
+}
+.showInfo button
+{
+    width: 100%;
+    height: 100%;
+    flex-basis: 10%;
+}
+.showInfo input[type= "text"]
+{
+    flex-basis: 80%;
+    margin: auto;
+    padding: 8px;
+}
+.showInfo input[type= "text"]::placeholder
+{
+    font-size: 1.3em;
+    border:none;
+    padding: 5px;
 }

@@ -8,13 +8,6 @@ function show()
     ];
     let table = document.getElementById("tbdata");
     table.style.margin="auto";
-    let textInfo = document.getElementById("showInfo");
-    let info = document.createElement("input");
-    info.setAttribute("type","text");
-    info.setAttribute("value","");
-    info.style.width= "100%";
-    info.style.height = "50px";
-    textInfo.appendChild(info);
     for(let i = 0; i < ans.length; i++)
     {
         let trbtn = document.createElement("tr");
@@ -28,10 +21,19 @@ function show()
             inp.style.fontSize= "1.5em";
             inp.style.textAlign="center";
             inp.style.height="100px";
+            inp.addEventListener("click",() =>{
+                let val = document.getElementById("txt");
+                let prev = val.value;
+                val.value= prev+""+ans[i][j];
+            })
             bnt.appendChild(inp);
             trbtn.append(bnt);
         }
         table.appendChild(trbtn);
     }
-
+}
+function clearText()
+{
+    let val = document.getElementById("txt");
+    val.value = "";
 }

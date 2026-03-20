@@ -2,6 +2,7 @@ let a = 123
 console.log(typeof(a))
 console.log(a)
 let b = 'a'
+
 console.log(typeof(b))
 console.log(b)
 let c = "Aniket"

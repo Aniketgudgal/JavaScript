@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container
+        {
+            width: 80%;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+      .container input 
+      {
+        width: 10%;
+      }
+    </style>
 </head>
-<body>
-    
+<body onload="deLoad()">
+    <div class="container">
+        <span id="showInfo"></span>
+        <input type="button" value="Click" onclick="add()">
+        <input type="button" name="bt" value="Clear" onclick="clearCount()">
+    </div>
+    <script type="text/javascript" src="./index.js"> </script>
 </body>
 </html>

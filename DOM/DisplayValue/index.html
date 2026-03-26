@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Value</title>
+    <style>
+        .container
+        {
+            width: 80%;
+            min-height: 120px;
+            margin: auto;
+            padding: 8px;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .container input
+        {
+            width:40%;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="acceptVal" value="" name="input-text">
+        <input type="button" value="Submit" onclick="displayValue()">
+        <input type="button" value="Clear" onclick="clearData()">
+        <span id="data"></span>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

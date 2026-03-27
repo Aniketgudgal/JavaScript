@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Licence</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 80%;
+            min-height: 150px;
+            margin: auto;
+            border: 1px solid #000;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .container .box
+        {
+            width: 40%;
+             display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .container .box input
+        {
+            width: 50%;
+            height: 30px;
+            margin-top: 50px;
+        }
+        .container .box button
+        {
+            width: 50%;
+            height: 40px;
+            background-color:greenyellow;
+            border: none;
+            font-size: 1.3em;
+        }
+        .box span
+        {
+            width: 250px;
+            height: 60px;
+            font-size: 1.2em;
+            color: rgb(75, 200, 75);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input type="text" placeholder="Enter Driving Licence number" id="ac" value="">
+            <button id="change" onclick="validateNum()">Validate</button>
+            <span id="showData"></span>
+        </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

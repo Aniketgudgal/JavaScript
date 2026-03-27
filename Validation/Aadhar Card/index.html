@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhar Validation</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            margin: auto;
+            width: 80%;
+            min-height: 250px;
+            border: 1px solid #000;
+        }
+        .container .box
+        {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 25px;
+        }
+        .container .box input
+        {
+            height: 35px;
+            width: 40%;
+            margin: auto;
+            outline: none;
+        }
+        .container .box button
+        {
+            width: 40%;
+            margin: auto;
+            height: 40px;
+        }
+        .container .box span
+        {
+            width: 40%;
+            margin: auto;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input type="text" id="accept" value="" placeholder="Enter Aadhar Number">
+            <span id="va"></span>
+            <button id="change" onclick="validate()">Validate</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="./index.js" ></script>
+</body>
+</html>

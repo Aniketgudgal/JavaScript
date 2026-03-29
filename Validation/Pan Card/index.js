@@ -7,7 +7,6 @@ function checkData()
     spn.style.marginBottom = "15px";
     let lname = document.getElementById("sname").value;
     lname = lname[0];
-    console.log(lname);
     if(val.length == 10)
     {
         let arr = new Array(-1,-1,-1,-1,-1,-1,-1,-1,-1,-1);
@@ -27,7 +26,6 @@ function checkData()
             }
             else if(val.charAt(i) >= 'A' && val.charAt(i) <= 'Z' && (i == val.length - 1))
             {
-                console.log(val.charAt(i));
                 if(val.charAt(i) == lname)
                 {
                     arr[i] = 1;

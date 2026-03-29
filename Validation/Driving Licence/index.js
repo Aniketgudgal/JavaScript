@@ -1,5 +1,6 @@
 function validateNum()
 {
+    //MH 16 2003   1 2 3  4   5  6  7
     //01 23 4567   8 9 10 11 12 13 14 
     let val = document.getElementById("ac").value;
     let firstVal = val.substring(0,2);

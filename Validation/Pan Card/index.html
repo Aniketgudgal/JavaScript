@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan Card</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 80%;
+            min-height: 120px;
+            margin: auto;
+            border: 1px solid #000;
+        }
+        .container .box
+        {
+            width: 80%;
+            min-height: 120px;
+            margin: auto;
+            margin-top: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .container .box input
+        {
+            width: 40%;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input type="text" value="" placeholder="Enter First Name">
+            <input type="text" id="sname" placeholder="Enter Last Name">
+            <input type="text" value="" id="access" placeholder="Enter Pan Number">
+            <input type="button" value="Validate" onclick="checkData()">
+            <div id="msg"></div>
+        </div>
+        
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

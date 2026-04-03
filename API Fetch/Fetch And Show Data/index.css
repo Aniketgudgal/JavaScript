@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    margin: auto;
+    width: 80%;
+    padding: 2px;
+    min-height: 100px;
+    /* border: 1px solid #000; */
+    display: flex;
+}
+.container input
+{
+    margin-left: 25px;
+    height: 35px;
+    width: 15%;
+    margin-top: 25px;
+    padding: 2px;
+}
+.showData
+{
+    margin: auto;
+    pad: 8px;
+    width: 80%;
+    min-height: 200px;
+    /* border: 1px solid #000; */
+}
+.showData table
+{
+    border: 1px solid #000;
+    margin: auto;
+    padding: 8px;
+    margin-top: 8px;
+    border-collapse: collapse;
+    width: 80%;
+}
+.showData table th,tr
+{
+    border: 1px solid #000;
+    padding: 8px;
+}
+.showData tbody tr,td
+{
+    border: 1px solid #000;
+    padding: 8px;
+}

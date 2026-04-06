@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Operation</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-btn">
+            <input type="button" onclick="addRow()" value="Add Row">
+            <input type="button" onclick="removeRow()" value="Remove Row">
+        </div>
+        <div class="table-context">
+            <table>
+                <thead>
+                    <tr><th style="width: 105px;">Sr no</th><th>Name</th> <th>Email</th> <th>Mobile Number</th></tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

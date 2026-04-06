@@ -10,4 +10,3 @@ js.then((data) =>
 }
 ).catch((irr) => console.log("Inner Error"+irr));
 }).catch((erro) => console.log("Error is: "+erro));
-

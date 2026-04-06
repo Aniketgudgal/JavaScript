@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index2.css">
+    <script src="./index2.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <input type="button" value="Add Row" onclick="addRow()">
+            <input type="button" value="Remove Row" onclick="removeRow()">
+        </div>
+        <div class="second">
+            <input type="text" value="" id="addInput" placeholder="Enter Column name">
+            <input type="button" value="Add Column" onclick="addCol()">
+        </div>
+        <div class="table-context">
+            <table>
+                <thead>
+                    <tr id="headTr">
+                        <th style="width: 65px;">sr no</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

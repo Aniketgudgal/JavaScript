@@ -28,7 +28,7 @@ function addCol()
 {
     let headTr = document.getElementById("headTr");
     let val = document.getElementById("addInput");
-    if(val.length != 0)
+    if(val.value.length != 0)
     {
         let th = document.createElement("th");
         th.innerHTML = val.value;

@@ -32,8 +32,8 @@ function show()
         }     
     ).catch((error) => console.log(error));
 }
-function clear()
+function clearTD()
 {
     let d = document.getElementById("data");
-    d.innerText = "";
+    d.innerHTML = "";
 }

@@ -1,9 +1,9 @@
 let p = new Promise((resolve, reject) => 
 {
-	let n = 1;
+	let n = 10;
 	if(n % 2 == 0)
 	{
-		resolve("Promise is resolve beause num is even");
+		resolve("Promise is resolve beause num is event Done");
 	}
 	else
 	{

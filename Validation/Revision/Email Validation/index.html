@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Validation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px;
+      }
+      .container input {
+        width: 40%;
+        margin-bottom: 8px;
+        height: 30px;
+        outline: none;
+      }
+      .container button {
+        width: 25%;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <input
+          type="text"
+          name="Email"
+          id="email"
+          placeholder="Enter Your Email"
+        /><br />
+        <button onclick="checkEmail()">Submit</button>
+      </div>
+      <div>
+        <span id="printResult"></span>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfirm Password</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        min-height: 200px;
+        margin: auto;
+        padding: 8px;
+      }
+      .container input {
+        width: 30%;
+        height: 35px;
+        margin-top: 25px;
+        outline: none;
+      }
+      .container button {
+        margin-top: 25px;
+        width: 20%;
+        height: 30px;
+      }
+      .res {
+        width: 80%;
+        padding: 8px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        value=""
+        id="firstInput"
+        placeholder="Enter Your Password"
+      /><br />
+      <input
+        type="text"
+        value=""
+        id="secondInput"
+        placeholder="Comfirm Password"
+      /><br />
+      <button onclick="checkPassword()">Validate</button>
+    </div>
+    <div class="res">
+      <span id="output"></span>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Validation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        margin: auto;
+        padding: 8px;
+        width: 80%;
+        min-height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .container input {
+        width: 50%;
+        height: 30px;
+        outline: none;
+      }
+      .container input::placeholder {
+        padding: 8px;
+      }
+      .container button {
+        width: 25%;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" value="" id="nameTag" placeholder="Enter Your Name" />
+      <button onclick="checkInput()">Submit</button>
+      <span id="display"></span>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

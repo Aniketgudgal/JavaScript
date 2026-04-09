@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Number Validation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        min-height: 150px;
+        margin: auto;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+      .container input {
+        width: 30%;
+        height: 25px;
+      }
+      .container button {
+        width: 20%;
+        height: 25px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <input
+          type="text"
+          name="num"
+          id="num"
+          value=""
+          placeholder="Enter Number"
+        />
+        <button onclick="CheckNum()">Submit</button>
+      </div>
+      <div><span id="output"></span></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
